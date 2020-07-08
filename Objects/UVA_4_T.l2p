@@ -1,0 +1,18 @@
+--cpu=Cortex-M4.fp.sp
+".\objects\main.o"
+".\objects\stm32f4xx_it.o"
+".\objects\system_stm32f4xx.o"
+".\objects\startup_stm32f40xx.o"
+".\objects\misc.o"
+".\objects\stm32f4xx_adc.o"
+".\objects\stm32f4xx_exti.o"
+".\objects\stm32f4xx_gpio.o"
+".\objects\stm32f4xx_i2c.o"
+".\objects\stm32f4xx_rcc.o"
+".\objects\stm32f4xx_spi.o"
+".\objects\stm32f4xx_tim.o"
+".\objects\stm32f4xx_usart.o"
+--library_type=microlib --strict --scatter ".\Objects\UVA_4_T.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list ".\Listings\UVA_4_T.map" -o .\Objects\UVA_4_T.axf
